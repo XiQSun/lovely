@@ -19,11 +19,25 @@
             width: 80%;
             height: 80vh;
             overflow-y: scroll;
-            background-color: #fff;
-            border: 2px solid #ff69b4;
+            background-color: rgba(255, 255, 255, 0.5);
             border-radius: 12px;
             padding: 20px;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .scroll-container::-webkit-scrollbar {
+            width: 12px;
+        }
+        .scroll-container::-webkit-scrollbar-track {
+            background: #ffe4e1;
+            border-radius: 10px;
+        }
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #ff69b4;
+            border-radius: 10px;
+            border: 3px solid #ffe4e1;
+        }
+        .scroll-container::-webkit-scrollbar-thumb:active {
+            background: #ff1493;
         }
         .content {
             line-height: 1.8;
@@ -39,6 +53,8 @@
 </head>
 <body>
     <div class="scroll-container">
+        <div class="content">dear 青青：</div>
+        <div class="content"> ❤️for you❤️</div>
         <div class="content">
             <script>
                 for (let i = 1; i <= 1314; i++) {

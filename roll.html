@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️Love you❤️</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff0f5;
+            color: #ff69b4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .scroll-container {
+            width: 80%;
+            height: 80vh;
+            overflow-y: scroll;
+            background-color: #fff;
+            border: 2px solid #ff69b4;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .content {
+            line-height: 1.8;
+        }
+        .content p {
+            margin: 5px 0;
+        }
+        .heart {
+            color: red;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="content">
+            <script>
+                for (let i = 1; i <= 1314; i++) {
+                    if (i === 520) {
+                        document.write(`<p>❤️ 520 我爱你</p>`);
+                    } else {
+                        document.write(`<p>❤️ ${i} 我想你</p>`);
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
